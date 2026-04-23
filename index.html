@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCheck AI | Ultimate Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&family=Work+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body id="mainBody">
+
+    <div class="glow-orb" id="orb1"></div>
+    <div class="glow-orb" id="orb2"></div>
+
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="logo"><i class='bx bx-planet'></i> VibeCheck</div>
+            <div class="status">AI Status: <span id="aiStatus">Active</span></div>
+        </nav>
+
+        <main class="content">
+            <header class="main-header">
+                <h1 id="greeting">Explore your nebula.</h1>
+                <p id="subtext">Your thoughts create the universe within.</p>
+            </header>
+
+            <div class="input-panel">
+                <textarea id="journalInput" placeholder="Start your cosmic transmission..."></textarea>
+                <div class="action-bar">
+                    <span id="charCount">0 characters</span>
+                    <button class="save-btn" id="saveBtn"><i class='bx bx-cloud-upload'></i> Save Vibe</button>
+                </div>
+            </div>
+
+            <aside class="analysis-panel">
+                <div class="mood-card anim-target">
+                    <h3>Current Vibe</h3>
+                    <div id="moodDisplay">
+                        <i class='bx bx-equalizer'></i>
+                        <span id="moodLabel">Harmonic 😐</span>
+                    </div>
+                </div>
+                <div class="suggestion-card anim-target">
+                    <h3>AI Insight</h3>
+                    <p id="suggestionBox">Waiting for your transmission...</p>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
